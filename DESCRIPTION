@@ -10,6 +10,6 @@ BugReports: http://github.com/yanyachen/arimaMisc/issues
 Imports: fArma, ridge
 License: GPL-2
 LazyData: true
-Packaged: 2015-02-27 03:33:28 UTC; Administrator
+Packaged: 2015-02-27 08:37:34 UTC; Administrator
 Author: Yachen Yan [aut, cre]
 Maintainer: Yachen Yan <yanyachen21@gmail.com>
