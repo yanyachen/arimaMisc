@@ -1,6 +1,7 @@
 # arimaMisc
 
 [![Build Status](https://travis-ci.org/yanyachen/arimaMisc.svg)](https://travis-ci.org/yanyachen/arimaMisc)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/yanyachen/arimaMisc?branch=master&svg=true)](https://ci.appveyor.com/project/yanyachen/arimaMisc)
 
 Time Series Analysis Miscellaneous Tools  
 
