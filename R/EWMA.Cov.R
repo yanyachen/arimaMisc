@@ -6,6 +6,7 @@
 #' @param rtn return series
 #' @param theta exponetial decay factor between 0 and 1
 #' @return exponentially weighted moving average covariance matrix
+#' @importFrom stats filter
 #' @export
 
 EWMA.Cov <- function(rtn, theta=0.94){

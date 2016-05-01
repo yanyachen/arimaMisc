@@ -5,10 +5,13 @@
 #'
 #' @param Arima Fitted ARIMA model from \code{\link{arima}}
 #' @param h maximum lag
+#' @importFrom graphics plot
+#' @importFrom graphics abline
+#' @importFrom graphics points
 #' @export
 
 Box.plot <- function(Arima,h=48){
-  plot(0,type='n', xlim=c(0,h), ylim=c(0,1), 
+  plot(0,type='n', xlim=c(0,h), ylim=c(0,1),
        main='Ljung-Box Test', ylab='p-Value', xlab='lag')
   abline(h=0.05, col="RED")
   for(i in 1:h){

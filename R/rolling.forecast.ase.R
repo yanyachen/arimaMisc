@@ -9,6 +9,9 @@
 #' @param start starting point for out-of-sample forecast
 #' @param plot logical flag: if TRUE, then plot the observations v.s. prediction
 #' @return mean square error of the prediction
+#' @importFrom stats ts.plot
+#' @importFrom stats predict
+#' @importFrom graphics legend
 #' @export
 
 rolling.forecast.ase <- function(series, Arima, range=10, start=50, plot=FALSE){
@@ -24,9 +27,9 @@ rolling.forecast.ase <- function(series, Arima, range=10, start=50, plot=FALSE){
   }
   if(plot==TRUE){
     real.pred <- cbind(series[start:(start+range)], pred)
-    ts.plot(real.pred, lty=1:2, col=c("BLACK","RED"), 
+    ts.plot(real.pred, lty=1:2, col=c("BLACK","RED"),
             main="Observation V.S. Prediction", xlab = "Number", ylab = "Value")
-    legend("topleft", legend=c("Observation", "Prediction"), 
+    legend("topleft", legend=c("Observation", "Prediction"),
            lty=1:2, col=c("BLACK","RED"))
   }
   return(mean(se))

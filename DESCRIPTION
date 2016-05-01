@@ -1,15 +1,18 @@
 Package: arimaMisc
 Type: Package
 Title: Time Series Analysis Miscellaneous Tools
-Version: 1.0.0
+Version: 1.1.0
 Authors@R: person("Yachen", "Yan", email = "yanyachen21@gmail.com", role = c("aut", "cre"))
-Description: This is a package collecting some useful function for Time Series Analysis, 
-    including statistical tests for time series data and several functions improving ARIMA modeling experience.
+Description: This is a package collecting some useful function for Time Series
+    Analysis, including statistical tests for time series data and several functions
+    improving ARIMA modeling experience.
 URL: http://github.com/yanyachen/arimaMisc
 BugReports: http://github.com/yanyachen/arimaMisc/issues
-Imports: fArma, ridge
+Imports:
+    graphics,
+    stats,
+    timeDate,
+    fArma
 License: GPL-2
 LazyData: true
-Packaged: 2015-02-28 12:41:53 UTC; Administrator
-Author: Yachen Yan [aut, cre]
-Maintainer: Yachen Yan <yanyachen21@gmail.com>
+RoxygenNote: 5.0.1

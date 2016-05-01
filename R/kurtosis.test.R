@@ -6,10 +6,11 @@
 #' @param series time series data
 #' @param sign significant level
 #' @return p-value
+#' @importFrom stats pnorm
 #' @export
 
 kurtosis.test <- function(series,sign=0.05){
-  s4 <- kurtosis(series)
+  s4 <- timeDate::kurtosis(series)
   len <- length(series)
   t4 <- abs(s4/sqrt(24/len))
   p4 <- 2*(1-pnorm(t4))
